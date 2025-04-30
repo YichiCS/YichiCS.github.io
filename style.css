@@ -1,88 +1,87 @@
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  a {
-    color: #8C1515;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #f09228;
-    text-decoration: underline;
-  }
-  
-  .container {
-    width:80%;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: #8C1515;
+  text-decoration: none;
+}
+a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+.container {
+  width:80%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a237e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cname {
+  font-size: 24px;
+  color: #444;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.question-mark {
+  margin-left: 5px;
+  color: #8C1515;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 1.2em;
+  left: 0;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 14px;
+  color: #777;
+}
+
+/* 响应式支持 */
+@media (max-width: 768px) {
   .name {
-    font-size: 32px;
-    font-weight: bold;
-    color: #1a237e;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 26px;
   }
-  
-  .cname {
-    font-size: 24px;
-    color: #444;
+  body {
+    padding: 10px;
   }
-  
-  .center-text {
-    text-align: center;
-  }
-  
-  .tooltip-wrapper {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .question-mark {
-    margin-left: 5px;
-    color: #8C1515;
-    cursor: pointer;
-  }
-  
-  .tooltip {
-    display: none;
-    position: absolute;
-    top: 1.2em;
-    left: 0;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-size: 0.9em;
-    border-radius: 5px;
-    white-space: nowrap;
-    z-index: 10;
-  }
-  
-  .tooltip-wrapper:hover .tooltip {
-    display: block;
-  }
-  
-  .footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* 响应式支持 */
-  @media (max-width: 768px) {
-    .name {
-      font-size: 26px;
-    }
-    body {
-      padding: 10px;
-    }
-  }
-  
+}
