@@ -56,8 +56,31 @@
   </table>
 
   <!-- 新增标准化的页脚 -->
-  <footer style="text-align: center; margin-top: 2rem;">
+  <!-- <footer style="text-align: center; margin-top: 2rem;">
     <p>Last updated: April 2025</p>
+  </footer> -->
+  <footer style="text-align: center; margin-top: 2rem;">
+    <p>Last updated: <span id="updateDate"></span></p>
   </footer>
+  
+  <script>
+  // 自动更新日期函数
+  function updateTimestamp() {
+    const months = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    
+    const currentDate = new Date();
+    const month = months[currentDate.getMonth()];
+    const day = currentDate.getDate();
+    const year = currentDate.getFullYear();
+    
+    document.getElementById("updateDate").textContent = `${month} ${day}, ${year}`;
+  }
+  
+  // 页面加载时更新日期
+  document.addEventListener("DOMContentLoaded", updateTimestamp);
+  </script>  
 </body>
 </html>
