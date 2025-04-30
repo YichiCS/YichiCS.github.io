@@ -23,7 +23,7 @@ Hi 👋! I am a final-year undergraduate student majoring in Information Enginee
 ✨✨✨ I am always looking for collaborators who are full of energy and ideas. If you are interested in 🛡️ trustworthy machine learnin, ⚡ efficient machine learning or 📚 machine learning theory, feel free to reach out to me anytime.
 
 <br>
-This website is still under construction. I am learning how to use HTML and CCS to build a website instead of using a template...
+This website is still under construction. I am learning how to use HTML and CSS to build a website instead of using a template...
 
 # 🔥 News
 - *2025.04*: &nbsp;🎉 I am accepted by Informatics Ph.D. program of Penn State.
