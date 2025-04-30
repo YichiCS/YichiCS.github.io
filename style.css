@@ -17,10 +17,46 @@ a:hover {
 }
 
 .container {
-  width:80%;
+  width: 80%;
   max-width: 850px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.name-section {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.question-mark {
+  font-size: 0.6em;
+  vertical-align: top;
+  color: #555;
+}
+
+.tooltip {
+  position: absolute;
+  top: -1.5em;
+  left: 1em;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.75em; /* 小字号 */
+  white-space: nowrap;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tooltip-wrapper:hover .tooltip {
+  display: block;
 }
 
 .name {
@@ -38,37 +74,6 @@ a:hover {
 
 .center-text {
   text-align: center;
-}
-
-.tooltip-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.question-mark {
-  font-size: 8px;
-  margin-left: 5px;
-  color: #8C1515;
-  cursor: pointer;
-}
-
-.tooltip {
-  font-size: 12px;
-  display: none;
-  position: absolute;
-  top: 1.2em;
-  left: 0;
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 8px;
-  font-size: 0.9em;
-  border-radius: 5px;
-  white-space: nowrap;
-  z-index: 10;
-}
-
-.tooltip-wrapper:hover .tooltip {
-  display: block;
 }
 
 .footer {
