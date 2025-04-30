@@ -1,2 +1,1 @@
-# YichiCS.github.io
-Homepage of Yichi Zhang
+Homepage of Yichi Zhang.
