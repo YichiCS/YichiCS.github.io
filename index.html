@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yichi Zhang's homepage</title>
-    
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Favicon -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yichi Zhang's Homepage</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90%' font-size='90'>🚀</text></svg>">
-  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90%' font-size='90'>🚀</text></svg>">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='90%' font-size='90'>🚀</text></svg>">
 </head>
-
 <body>
-  <table>
-    <tbody>
-      <tr>
-        <td style="width:63%;">
-          <p style="text-align:center">
-            <name>Yichi ZHANG</name>
-            <cname>「张亦弛</cname>
-              <span>
-                <span class="question-mark">?</span>
-                <span class="tooltip">
-                  My first name is Yichi, and my last name is Zhang.
-                    <br>Possible pronunciation: Yi-Chi Zhang.
-                </span>
+  <div class="container">
+    <div class="content">
+      <div class="name-section">
+        <h1 class="name">Yichi ZHANG <span class="cname">「张亦弛</span>
+          <span class="tooltip-wrapper">
+            <span class="question-mark">?</span>
+            <span class="tooltip">
+              My first name is Yichi, and my last name is Zhang.<br />
+              Possible pronunciation: Yi-Chi Zhang.
             </span>
-            <cname>」</cname>
-          </p>
-                
-          <p>
-            Hi 👋! I am a final-year undergraduate student majoring in Information Engineering at 
-            <a href="https://www.zju.edu.cn/">Zhejiang University</a>, supervised by Prof. 
-            <a href="https://scholar.google.com/citations?user=5HoF_9oAAAAJ">Shouling Ji</a> and Prof. 
-            <a href="https://scholar.google.com/citations?user=a2WEREUAAAAJ">Qianqian Yang</a>. 
-            Starting in September 2025, I will join <a href="https://www.psu.edu/">Pennsylvania State University</a> 
-            as a Ph.D. student in Informatics under the supervision of Prof. 
-            <a href="https://scholar.google.com/citations?user=bugfOowAAAAJ">Yuchen Yang</a>. 
-            My current research interests primarily lie in 
-            <em><a>trustworthy machine learning</a></em> and 
-            <em><a>machine learning theory</a></em>.
-          </p>
-          <div align="center">
-          <p>
-            Email: <br>
-            X = {yichics02}, Y = {@gmail.com} <br>
-            X = {yichizhang}, Y = {@zju.edu.cn}
-          </p>
-          </div>
-          <p>
-            This website is still under construction. I am learning how to use HTML and CSS to build a website instead of using a template...
-          </p>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+          </span><span class="cname">」</span>
+        </h1>
+      </div>
 
-  <table>
-  </table>
+      <p>
+        Hi 👋! I am a final-year undergraduate student majoring in Information Engineering at 
+        <a href="https://www.zju.edu.cn/">Zhejiang University</a>, supervised by 
+        <a href="https://scholar.google.com/citations?user=5HoF_9oAAAAJ">Prof. Shouling Ji</a> and 
+        <a href="https://scholar.google.com/citations?user=a2WEREUAAAAJ">Prof. Qianqian Yang</a>. 
+        I will join 
+        <a href="https://www.psu.edu/">Pennsylvania State University</a> as a Ph.D. student in Informatics under 
+        <a href="https://scholar.google.com/citations?user=bugfOowAAAAJ">Prof. Yuchen Yang</a> in 2025. 
+        My research interests lie in 
+        <em><a href="#">trustworthy machine learning</a></em> and 
+        <em><a href="#">machine learning theory</a></em>.
+      </p>
 
-  <!-- 新增标准化的页脚 -->
-  <footer style="text-align: center; margin-top: 2rem;">
+      <div class="center-text">
+        <p>Email:<br />
+          X = {yichics02}, Y = {@gmail.com} <br />
+          X = {yichizhang}, Y = {@zju.edu.cn}
+        </p>
+      </div>
+
+      <p>This website is still under construction. I'm learning HTML/CSS from scratch.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
     <p>Last updated: <span id="updateDate"></span></p>
   </footer>
-  <script src="asserts/js/updateDate.js"></script>
+
+  <script src="assets/js/updateDate.js"></script>
 </body>
 </html>
