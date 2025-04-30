@@ -26,13 +26,13 @@ a:hover {
 .name {
   font-size: 32px;
   font-weight: bold;
-  color: #1a237e;
+  color: #8C1515;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.cname {
-  font-size: 24px;
+.name-zh {
+  font-size: 32px;
   color: #444;
 }
 
