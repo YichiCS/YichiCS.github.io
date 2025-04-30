@@ -52,6 +52,7 @@ a:hover {
 }
 
 .tooltip {
+  font-size: 12px;
   display: none;
   position: absolute;
   top: 1.2em;
