@@ -1,4 +1,4 @@
-// script/updateDate.js
+// asserts/js/updateDate.js
 
 function updateTimestamp() {
     const months = [
