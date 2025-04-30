@@ -40,6 +40,7 @@ a:hover {
 }
 
 .tooltip {
+  font-size: 6px;
   position: absolute;
   top: -1.5em;
   left: 1em;
