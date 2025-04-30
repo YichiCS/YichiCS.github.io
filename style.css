@@ -1,5 +1,7 @@
-/* ==================== 字体定义 ==================== */
-/* Lato 常规体 */
+/* =====================
+   字体定义 Font Faces
+   ===================== */
+/* Lato 常规体 Regular */
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -9,6 +11,7 @@
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* Lato 常规体-拉丁字符子集 Regular Latin */
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -18,64 +21,9 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Lato 粗体 */
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Lato Bold'), local('Lato-Bold'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Lato Bold'), local('Lato-Bold'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Lato 斜体 */
-@font-face {
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Lato Italic'), local('Lato-Italic'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Lato Italic'), local('Lato-Italic'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Lato 粗斜体 */
-@font-face {
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-         url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191-2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* ==================== 全局样式 ==================== */
+/* =====================
+   全局基础样式 Global Styles
+   ===================== */
 body {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
@@ -85,25 +33,28 @@ body {
     padding: 20px;
 }
 
-/* ==================== 链接样式 ==================== */
+/* 链接样式 Links */
 a {
-    color: #1772d0;
+    color: #8C1515;                    /* 主链接颜色 */
+    background-color: transparent;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease;       /* 平滑颜色过渡 */
 }
 
 a:focus,
 a:hover {
-    color: #f09228;
+    color: #f09228;                    /* 悬停颜色 */
     text-decoration: underline;
 }
 
-/* ==================== 排版元素 ==================== */
+/* =====================
+   排版元素 Typography
+   ===================== */
 h2 {
     font-size: 22px;
     font-weight: 700;
     margin: 1.5em 0 0.8em;
-    color: #2c3e50;
+    color: #2c3e50;                    /* 深蓝色标题 */
 }
 
 .papertitle {
@@ -116,12 +67,40 @@ h2 {
 .name {
     font-size: 32px;
     font-weight: 700;
-    color: #1a237e;
+    color: #1a237e;                    /* 深蓝色名称 */
     padding-top: 20px;
     margin-bottom: 15px;
 }
 
-/* ==================== 特殊组件 ==================== */
+/* 段落缩进 Paragraph indent */
+.rp { 
+    text-indent: 1em; 
+}
+
+/* =====================
+   交互组件 Interactive Components
+   ===================== */
+/* 工具提示 Tooltip */
+.question-mark {
+    cursor: pointer;
+    font-weight: bold;
+    color: #8C1515;
+    font-size: 100%;
+    vertical-align: top;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 80%;
+}
+
+/* 图片容器 Image containers */
 .one {
     width: 160px;
     height: 160px;
@@ -136,17 +115,20 @@ h2 {
     transition: opacity 0.2s ease-in-out;
 }
 
+/* 渐隐效果 Fade effect */
 .fade {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
 
+/* 高亮文本 Highlight text */
 span.highlight {
     background-color: #ffffd0;
     padding: 2px 4px;
     border-radius: 3px;
 }
 
+/* 彩色信息框 Colored info box */
 .colored-box {
     background-color: #f8f9fa;
     color: #2c3e50;
@@ -156,17 +138,46 @@ span.highlight {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* ==================== 响应式设计 ==================== */
+/* =====================
+   表格样式 Table Styles
+   ===================== */
+table {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 2.5%;
+    vertical-align: middle;
+}
+
+/* =====================
+   响应式设计 Responsive Design
+   ===================== */
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 10px;                 /* 移动端减少内边距 */
     }
     
     .name {
-        font-size: 28px;
+        font-size: 28px;               /* 缩小标题字号 */
     }
     
     .colored-box {
-        padding: 15px;
+        padding: 15px;                 /* 调整信息框内边距 */
     }
+}
+
+/* =====================
+   实用工具类 Utility Classes
+   ===================== */
+.over { 
+    cursor: pointer;                   /* 可点击元素指示 */
+}
+
+.abs { 
+    cursor: pointer;                   /* 绝对定位点击元素 */
 }
