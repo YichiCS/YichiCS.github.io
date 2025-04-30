@@ -46,6 +46,7 @@ a:hover {
 }
 
 .question-mark {
+  font-size: 8px;
   margin-left: 5px;
   color: #8C1515;
   cursor: pointer;
