@@ -1,0 +1,61 @@
+/* 添加到你的CSS文件 */
+.markdown-title {
+  font-family: Georgia, serif;
+  margin: 1.5em 0 0.8em;
+  position: relative;
+}
+
+/* 一级标题 - 类似# */
+.title-h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid #8C1515;
+}
+
+/* 二级标题 - 类似## */ 
+.title-h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-left: 15px;
+  border-left: 4px solid #f09228;
+}
+
+/* 三级标题 - 类似### */
+.title-h3 {
+  font-size: 1.5em;
+  font-weight: 550;
+  background: linear-gradient(transparent 60%, rgba(143,21,21,0.15) 0);
+}
+
+/* 四级标题 - 类似#### */
+.title-h4 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #666;
+  position: relative;
+  padding-left: 1em;
+}
+
+.title-h4::before {
+  content: "▌";
+  position: absolute;
+  left: 0;
+  color: #8C1515;
+}
+
+/* 五级标题 - 类似##### */
+.title-h5 {
+  font-size: 1.1em;
+  font-weight: 450;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .title-h1 { font-size: 1.8em; }
+  .title-h2 { font-size: 1.5em; }
+  .title-h3 { font-size: 1.3em; }
+}
