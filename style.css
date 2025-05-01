@@ -49,7 +49,6 @@ a:hover {
   padding: 6px 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 0.75em; /* 小字号 */
   white-space: nowrap;
   display: none;
   z-index: 10;
