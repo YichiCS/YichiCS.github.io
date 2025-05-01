@@ -1,0 +1,63 @@
+.name {
+  /* 基础样式 */
+  font-size: 32px;
+  color: #8C1515;
+  text-align: center;
+  margin-bottom: 20px;
+
+  /* 弹性容器配置 */
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4em;
+  max-width: 100%;
+
+  /* 防内容截断 */
+  box-sizing: border-box;
+}
+
+.name-en, .name-zh {
+  /* 保证单个名字不换行 */
+  white-space: nowrap;
+  
+  /* 平滑缩放 */
+  will-change: transform;
+  transition: font-size 0.3s ease;
+}
+
+.name-zh {
+  color: #444;
+}
+
+/* 响应式断点 */
+@media (max-width: 768px) {
+  .name {
+    /* 启用智能换行 */
+    flex-wrap: wrap;
+    font-size: 28px;
+  }
+  
+  /* 添加连接符号 */
+  .name-zh::before {
+    content: "「";
+    margin-left: -0.2em;
+  }
+  .name-zh::after {
+    content: "」";
+    margin-right: -0.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 24px;
+    /* 确保最小可读尺寸 */
+    min-width: min-content;
+  }
+  
+  /* 移动端换行优化 */
+  .name-en::after {
+    content: "\A";
+    white-space: pre;
+  }
+}
