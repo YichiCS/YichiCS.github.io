@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('/fonts/Georgia.woff2') format('woff2'),
+       url('/fonts/Georgia.woff')   format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Georgia', serif;   /* 主字体 Georgia，回退为任意衬线体 */
   font-size: 18px;
