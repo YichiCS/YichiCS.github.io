@@ -29,22 +29,22 @@
   color: #444;
 }
 
+/* 添加连接符号 */
+.name-zh::before {
+  content: "「";
+  margin-left: -0.2em;
+}
+.name-zh::after {
+  content: "」";
+  margin-right: -0.2em;
+}
+
 /* 响应式断点 */
 @media (max-width: 768px) {
   .name {
     /* 启用智能换行 */
     flex-wrap: wrap;
     font-size: 28px;
-  }
-  
-  /* 添加连接符号 */
-  .name-zh::before {
-    content: "「";
-    margin-left: -0.2em;
-  }
-  .name-zh::after {
-    content: "」";
-    margin-right: -0.2em;
   }
 }
 
