@@ -71,7 +71,7 @@ a:hover {
   width: 80%;
   max-width: 850px;  /* 与.container保持一致 */
   margin: 0 auto;    /* 居中容器 */
-  padding: 0 20px;   /* 抵消父容器的padding */
+  /* /* padding: 0 20px;   抵消父容器的padding */
   box-sizing: border-box; /* 确保宽度计算包含padding */
   text-align: right;
   margin-top: 2rem;
