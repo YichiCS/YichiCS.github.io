@@ -1,11 +1,13 @@
 body {
-  font-family: 'Georgia', sans-serif;
+  font-family: 'Georgia', serif;   /* 主字体 Georgia，回退为任意衬线体 */
   font-size: 18px;
   line-height: 1.6;
   color: #333;
   margin: 0;
   padding: 20px;
+  text-align: justify;             /* 左右两端对齐 */
 }
+
 
 a {
   color: #8C1515;
