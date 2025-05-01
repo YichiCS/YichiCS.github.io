@@ -4,6 +4,7 @@
   color: #8C1515;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 
   /* 弹性容器配置 */
   display: inline-flex;
@@ -17,10 +18,7 @@
 }
 
 .name-en, .name-zh {
-  /* 保证单个名字不换行 */
   white-space: nowrap;
-  
-  /* 平滑缩放 */
   will-change: transform;
   transition: font-size 0.3s ease;
 }
@@ -51,11 +49,9 @@
 @media (max-width: 480px) {
   .name {
     font-size: 24px;
-    /* 确保最小可读尺寸 */
     min-width: min-content;
   }
   
-  /* 移动端换行优化 */
   .name-en::after {
     content: "\A";
     white-space: pre;

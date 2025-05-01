@@ -63,25 +63,13 @@ a:hover {
   display: block;
 }
 
-.name {
-  font-size: 32px;
-  font-weight: bold;
-  color: #8C1515;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.name-zh {
-  font-size: 32px;
-  color: #444;
-}
-
 .center-text {
   text-align: center;
 }
 
 .footer {
-  text-align: center;
+  width: 80%;
+  text-align: right;
   margin-top: 2rem;
   font-size: 14px;
   color: #777;
