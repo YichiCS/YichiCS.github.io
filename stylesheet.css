@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Georgia', serif;
+  /* font-family: serif; */
   font-size: 18px;
   line-height: 1.6;
   color: #333;
@@ -30,6 +31,11 @@ a:hover {
   max-width: 850px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.content {
+  border-top: 2px solid #eee;
+  padding-top: 1.5rem
 }
 
 .tooltip-wrapper {
