@@ -83,12 +83,3 @@ a:hover {
   font-size: 14px;
   color: #777;
 }
-
-@media (max-width: 768px) {
-  .name {
-    font-size: 26px;
-  }
-  body {
-    padding: 10px;
-  }
-}

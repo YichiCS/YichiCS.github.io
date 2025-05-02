@@ -52,10 +52,3 @@
   letter-spacing: 0.08em;
   color: #888;
 }
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .title-h1 { font-size: 1.8em; }
-  .title-h2 { font-size: 1.5em; }
-  .title-h3 { font-size: 1.3em; }
-}

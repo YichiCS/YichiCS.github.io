@@ -56,25 +56,3 @@
 .tabs_pane_active {
   display: block;
 }
-
-/* 移动端优化 */
-@media (max-width: 600px) {
-  .content {
-    height: 250px; /* 缩小高度适应小屏幕 */
-  }
-  
-  .news-item {
-    font-size: 0.9em;
-  }
-}
-
-/* — Responsive — */
-@media (max-width: 600px) {
-  .tabs_header {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .tabs_nav {
-    flex-wrap: wrap;
-  }
-}
