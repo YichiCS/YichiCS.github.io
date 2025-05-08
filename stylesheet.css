@@ -1,85 +1,206 @@
-@font-face {
-  font-family: 'Georgia';
-  src: url('/fonts/Georgia.woff2') format('woff2'),
-       url('/fonts/Georgia.woff')   format('woff');
-  font-weight: normal;
-  font-style: normal;
+
+/* this is just the better box model */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
+/* minimalist reset */
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 1rem;
+}
+
+/* typography */
 body {
-  font-family: 'Georgia', serif;
-  /* font-family: serif; */
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 20px;
-  text-align: justify;  
+	font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", Consolas, "Liberation Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Droid Sans Mono", "Lucida Console", "Courier New", monospace;
+	line-height: 1.5;
+	background-color: #2b2b2b;
+}
+
+/* no text overflow */
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* media should not be inline, but be blocks */
+/* media shouldn't break out of their container */
+img, picture, video, canvas, svg {
+	display: block;
+    max-width: 100%;
+}
+
+/* remove gap between table cells */
+table {
+	border-collapse: collapse;
 }
 
 a {
-  color: #8C1515;
-  text-decoration: none;
-}
-a:hover {
-  color: #f09228;
-  text-decoration: underline;
+	color: inherit;
 }
 
-.container {
-  width: 80%;
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 0 20px;
+a:hover, a:focus {
+	color: black;
 }
 
-.content {
-  border-top: 2px solid #eee;
-  padding-top: 1.5rem
+body {
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 50rem;
 }
 
-.tooltip-wrapper {
-  position: relative;
-  cursor: pointer;
+@media (max-width: 600px)  {
+	body {
+		padding: 0.5rem;
+	}
 }
 
-.question-mark {
-  font-size: 0.6em;
-  vertical-align: top;
-  color: #555;
+h1 {
+	font-size: 1.5rem;
 }
 
-.tooltip {
-  font-size: 6px;
-  position: absolute;
-  top: -1.5em;
-  left: 1em;
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 6px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  white-space: nowrap;
-  display: none;
-  z-index: 10;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+h2 {
+	border-top: solid 0.1rem;
+	padding-top: 2rem;
 }
 
-.tooltip-wrapper:hover .tooltip {
-  display: block;
+h2 a {
+	font-size: 1.5rem;
+	text-decoration: none;
 }
 
-.center-text {
-  text-align: center;
+h3 {
+	font-style: italic;
+	padding-top: 2rem;
 }
 
-.footer {
-  width: 80%;
-  max-width: 850px;  /* 与.container保持一致 */
-  margin: 0 auto;    /* 居中容器 */
-  box-sizing: border-box; /* 确保宽度计算包含padding */
-  text-align: right;
-  margin-top: 2rem;
-  font-size: 14px;
-  color: #777;
+h4 {
+	font-weight: 400;
+	filter: opacity(0.5);
+}
+
+p, img {
+	padding-top: 1rem;
+}
+
+li {
+	list-style-type: square;
+	margin-left: 1rem;
+}
+
+section {
+	padding-bottom: 2rem;
+}
+
+table, th, td {
+	border: 0.1rem solid;
+	padding: 0.1rem 0.5rem;
+}
+
+table {
+	margin: 1rem 0;
+	line-height: 1.2;
+}
+
+footer {
+	padding-top: 5rem;
+	text-align: right;
+	color: rgb(255, 253, 208);
+}
+footer a:hover, footer a:focus {
+	background-color: white;
+}
+
+.module-A {
+	color: rgb(255, 253, 208);
+}
+
+.module-A a:hover, #module-A a:focus {
+	background-color: rgb(255, 253, 208);
+}
+
+#module-B {
+	color: rgb(150, 173, 252);
+}
+
+#module-B a:hover, #module-B a:focus {
+	background-color: rgb(150, 173, 252);
+}
+
+#module-C {
+	color: rgb(255, 192, 0);
+}
+
+#module-C a:hover, #module-C a:focus {
+	background-color: rgb(255, 192, 0);
+}
+
+#module-D {
+	color: rgb(185, 135, 220);
+}
+
+#module-D a:hover, #module-E a:focus {
+	background-color: rgb(185, 135, 220);
+}
+
+#module-E {
+	color: rgb(168, 242, 154);
+}
+
+#module-E a:hover, #module-D a:focus {
+	background-color: rgb(168, 242, 154);
+}
+
+.rotate-text {
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	text-align: left;
+}
+
+th {
+	vertical-align: bottom;
+}
+
+#cs-rankings table, #cs-rankings th, #cs-rankings td {
+	border: none;
+	padding: 0rem 0.5rem;
+}
+#cs-rankings th {
+	border-bottom: 0.1rem solid;
+	padding: 0.5rem 0.1rem;
+}
+
+#cs-rankings td:nth-child(2),
+#cs-rankings td:nth-child(3),
+#cs-rankings td:nth-child(4),
+#cs-rankings td:nth-child(5),
+#cs-rankings td:nth-child(6),
+#cs-rankings td:nth-child(7) {
+	text-align: end;
+}
+
+#stipend-table th:nth-child(2),
+#stipend-table th:nth-child(3),
+#stipend-table td:nth-child(2),
+#stipend-table td:nth-child(3) {
+	text-align: end;
+}
+
+.placements th:nth-child(2),
+.placements th:nth-child(3),
+.placements td:nth-child(2),
+.placements td:nth-child(3) {
+	text-align: end;
+}
+
+#cs-best-papers td:nth-child(2) {
+	text-align: end;
+}
+
+.faded {
+	filter: opacity(0.5);
+}
+
+.image-filter {
+	filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
