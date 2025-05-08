@@ -16,11 +16,13 @@ body {
 	font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", Consolas, "Liberation Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro","Droid Sans Mono", "Lucida Console", "Courier New", monospace;
 	line-height: 1.5;
 	background-color: #2b2b2b;
+  color: #d4d4d4;
 }
 
 /* no text overflow */
 p, h1, h2, h3, h4, h5, h6 {
 	overflow-wrap: break-word;
+  /* overflow-wrap: anywhere */
 }
 
 /* media should not be inline, but be blocks */
@@ -40,7 +42,8 @@ a {
 }
 
 a:hover, a:focus {
-	color: black;
+	color: #2b2b2b;
+  background-color: #d4d4d4;
 }
 
 body {
@@ -105,7 +108,7 @@ table {
 footer {
 	padding-top: 5rem;
 	text-align: right;
-	color: rgb(255, 253, 208);
+	color: #999999;
 }
 footer a:hover, footer a:focus {
 	background-color: white;
@@ -115,7 +118,7 @@ footer a:hover, footer a:focus {
 	color: rgb(255, 253, 208);
 }
 
-.module-A a:hover, #module-A a:focus {
+.module-A a:hover, .module-A a:focus {
 	background-color: rgb(255, 253, 208);
 }
 
@@ -139,7 +142,7 @@ footer a:hover, footer a:focus {
 	color: rgb(185, 135, 220);
 }
 
-#module-D a:hover, #module-E a:focus {
+#module-D a:hover, #module-D a:focus {
 	background-color: rgb(185, 135, 220);
 }
 
@@ -147,7 +150,7 @@ footer a:hover, footer a:focus {
 	color: rgb(168, 242, 154);
 }
 
-#module-E a:hover, #module-D a:focus {
+#module-E a:hover, #module-E a:focus {
 	background-color: rgb(168, 242, 154);
 }
 
@@ -161,42 +164,6 @@ th {
 	vertical-align: bottom;
 }
 
-#cs-rankings table, #cs-rankings th, #cs-rankings td {
-	border: none;
-	padding: 0rem 0.5rem;
-}
-#cs-rankings th {
-	border-bottom: 0.1rem solid;
-	padding: 0.5rem 0.1rem;
-}
-
-#cs-rankings td:nth-child(2),
-#cs-rankings td:nth-child(3),
-#cs-rankings td:nth-child(4),
-#cs-rankings td:nth-child(5),
-#cs-rankings td:nth-child(6),
-#cs-rankings td:nth-child(7) {
-	text-align: end;
-}
-
-#stipend-table th:nth-child(2),
-#stipend-table th:nth-child(3),
-#stipend-table td:nth-child(2),
-#stipend-table td:nth-child(3) {
-	text-align: end;
-}
-
-.placements th:nth-child(2),
-.placements th:nth-child(3),
-.placements td:nth-child(2),
-.placements td:nth-child(3) {
-	text-align: end;
-}
-
-#cs-best-papers td:nth-child(2) {
-	text-align: end;
-}
-
 .faded {
 	filter: opacity(0.5);
 }
@@ -204,3 +171,5 @@ th {
 .image-filter {
 	filter: sepia(100%) hue-rotate(190deg) saturate(300%);
 }
+
+/* YICHI */
