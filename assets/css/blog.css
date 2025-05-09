@@ -17,15 +17,9 @@ hr {
 .toc-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 两列等宽 */
-  list-style-type: upper-alpha; /* 字母编号 */
   padding-left: 1em;
 }
 
 .toc-container li {
   margin-bottom: 8px;
-}
-
-.toc-container a {
-  text-decoration: none;
-  color: inherit;
 }
