@@ -1,0 +1,15 @@
+h5 {
+  margin: 1em 0;
+  font-size: 1.25em;
+  text-align: center;
+  position: relative;
+}
+
+hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid;
+  color: inherit;
+  margin: 2em 0;
+}
