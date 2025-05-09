@@ -115,11 +115,11 @@ footer a:hover, footer a:focus {
 }
 
 .module-A {
-	color: rgb(255, 253, 208);
+	color: #D8D4B2;
 }
 
 .module-A a:hover, .module-A a:focus {
-	background-color: rgb(255, 253, 208);
+	background-color: #D8D4B2;
 }
 
 #module-B {
