@@ -131,11 +131,11 @@ footer a:hover, footer a:focus {
 }
 
 #module-C {
-	color: rgb(255, 192, 0);
+	color: #D9A347;
 }
 
 #module-C a:hover, #module-C a:focus {
-	background-color: rgb(255, 192, 0);
+	background-color: #D9A347;
 }
 
 #module-D {
